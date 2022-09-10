@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="script.js"></script>
+</head>
+
+<body>
+    <section class="nav-section position-fixed w-100 border-bottom border-dark shadow">
+        <nav class='navbar navbar-expand-md container-md justify-content-between'>
+            <div class="d-flex justify-content-between align-items-center" id="logoHam">
+                <a href="#home" class="navbar-brand ms-2 text-white">Betim Bytyqi</a>
+                <button id="ham-btn" class="navbar-toggler d-flex d-md-none flex-column justify-content-around me-2 " type="button" data-bs-toggle="collapse" data-bs-target="#ul-id" aria-controls="ul-id" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span><span class="toggler-icon middle-bar"></span><span class="toggler-icon bottom-bar"></span>
+                </button>
+            </div>
+            <ul id="ul-id" class="navbar-nav collapse navbar-collapse justify-content-end">
+                <li class="nav-item"><a href="#home" class="nav-link text-light">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link text-light">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link  text-light">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link  text-light">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link  text-light">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="home" class="home-section position-relative w-100 w-100">
+
+        <div class=" h-100 d-flex align-items-center justify-content-center w-100  container ">
+            <p id="home-text" class="h1 text-light">My name is <span class="text-primary">Betim Bytyqi</span> <br> and I am a <span class="text-danger">Front-End Developer</span></p>
+        </div>
+
+    </section>
+    <section id="about" class="about-section w-100">
+        <div class="container">
+            <div class=" row flex-column-reverse flex-md-row-reverse row-cols-1 row-cols-md-2 pt-5">
+                <div class="col d-flex align-items-center">
+                    <img class="w-100 m-2" src="img/undraw_programming_re_kg9v.svg">
+                </div>
+                <div class="col ps-4 flex-column ">
+                    <div class="w-100 d-flex justify-content-center mb-5  about_">
+                        <p class="h1 text-primary mb-3">About</p>
+                    </div>
+                    <p class="h5 text-light mb-3">
+                        Hello, my name is Betim Bytyqi and I am 17 years old and a student. In the future I plan on learning more about Web Development and improve my skills.
+                    </p>
+                    <a href="https://github.com/betim05" target="_blank" class="btn btn-primary btn  my-5">
+                       GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="position-relative projects-section w-100" id="projects">
+        <div class="w-100 position-absolute waveImg">
+            <img class="w-100" src="img/wave.svg">
+        </div>
+        <div class="container flex-column project-content">
+            <div class="w-100 d-flex justify-content-center mb-5  about_ ">
+                <p class="h1 text-primary mb-3 ">Projects</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 py-5  ">
+                <div class="col">
+                    <div class="card shadow">
+                        <img src="img/game.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Space Game</h5>
+                            <p class="card-text">For this Game I used HTML, CSS and JS and I learned a lot through this experience.</p>
+                            <a href="https://betim05.github.io/My-firs-game-/" target="_blank" class="btn btn-primary">Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow">
+                        <img src="img/landing-page.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Landing Page</h5>
+                            <p class="card-text">I used HTML, CSS and BOOTSTRAP to make this project.</p>
+                            <a href="https://betim05.github.io/landing-page/" target="_blank" class="btn btn-primary">Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow">
+                        <img src="img/poke.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Pokadex</h5>
+                            <p class="card-text">I used HTML, CSS, JS, REACT and an API for this project.</p>
+                            <a href="https://betim05.github.io/pokadex-react-app/" target="_blank" class="btn btn-primary">Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card  shadow">
+                        <img src="img/todo.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">To Do App</h5>
+                            <p class="card-text">I used HTML, CSS and JS for this project.</p>
+                            <a href="https://betim05.github.io/" target="_blank" class="btn btn-primary">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="w-100 wave1Img">
+        <img class="w-100" src="img/wave (1).svg">
+    </div>
+    <section class="skills-section" id="skills">
+        <div class="container d-flex flex-column-reverse flex-md-row py-4">
+            <div class="col d-flex align-items-center justify-content-center ">
+                <img src="img/undraw_code_thinking_re_gka2.svg" class="w-100 pe-5 mt-5">
+            </div>
+            <div class="col d-flex flex-column mb-5 ">
+                <div class="col mb-5 d-flex align-items-end ">
+                    <div class="w-100 d-flex justify-content-centers justify-content-center  about_">
+                        <p class="h1 text-primary mb-3">Skills</p>
+                    </div>
+                </div>
+                <div class="col row row-cols-3 row-cols-lg-4 g-2 mb-5  w-100 h-50 ">
+                    <div class="col">
+                        <div class=" htmlIcon "><img class="w-100" src="img/html-svgrepo-com.svg"></div>
+                    </div>
+                    <div class="col">
+                        <div class=" cssIcon "><img class="w-100" src="img/css-svgrepo-com.svg"></div>
+                    </div>
+                    <div class="col">
+                        <div class=" jsIcon "><img class="w-100" src="img/js-svgrepo-com.svg"></div>
+                    </div>
+                    <div class="col">
+                        <div class=" bootstrapIcon "><img class="w-100" src="img/bootstrap-svgrepo-com.svg"></div>
+                    </div>
+                    <div class="col">
+                        <div class=" gitIcon "><img class="w-100" src="img/git-svgrepo-com.svg"></div>
+                    </div>
+                    <div class="col">
+                        <div class=" githubIcon "><img class="w-100" src="img/github-svgrepo-com.svg"></div>
+                    </div>
+                    <div class="col">
+                        <div class="reactIcon  "><img class="w-100" src="img/react-svgrepo-com.svg"></div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <section id="contact" class="footer py-5">
+        <div class="container ">
+            <div class="mx-md-5 px-md-5">
+                <div class="w-100 d-flex justify-content-centers justify-content-center  about_">
+                    <p class="h1 text-primary mb-3">Contact</p>
+                </div>
+                <form action="https://formsubmit.co/fd4617d73c822db222cf61cf0f797bda" method="POST">
+                    <label for="name" class="form-label text-light mt-4">Name </label>
+                    <input class="form-control " type="text" name="name" placeholder="Your Name" required>
+                    <label for="email" class="form-label text-light mt-4">Email </label>
+                    <input class="form-control " type="email" name="email" placeholder="Your Email" required>
+                    <label for="message" class="form-label text-light mt-4">Message </label>
+                    <textarea class="form-control" name="message" placeholder="Your Message"></textarea>
+                    <button class="btn btn-success mt-4" type="submit">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

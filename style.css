@@ -1,0 +1,339 @@
+:root {
+    --nav-bg: #333;
+    --body-bg: #222;
+    --text-n: rgb(255, 255, 255);
+}
+
+.nav-section {
+    background-color: var(--nav-bg);
+    z-index: 999;
+}
+
+#logoHam {
+    width: 100%;
+}
+
+.home-section {
+    height: 100vh;
+    transform: translateY(2px);
+    background: url(img/blob-scene-haikei\ \(1\).svg);
+    background-size: cover;
+}
+
+#home-text {
+    animation: textAnimation 2s infinite;
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: translateY(-.5rem);
+    }
+    50% {
+        transform: translateY(.5rem);
+    }
+    100% {
+        transform: translateY(-.5rem);
+    }
+}
+
+.about-section {
+    background-color: var(--body-bg);
+}
+
+.about_ {
+    position: relative;
+    animation: textAnimation 1s infinite;
+}
+
+.about_::after {
+    content: '';
+    width: 10rem;
+    height: .5rem;
+    background-color: rgb(144, 144, 144);
+    border-radius: .25rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.htmlIcon {
+    position: relative;
+    background-color: #444;
+    border-radius: .5rem;
+    padding: 0;
+}
+
+.htmlIcon::after {
+    content: "";
+    color: var(--text-n);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.htmlIcon:hover::after {
+    content: 'HTML';
+    opacity: 1;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.46);
+}
+
+.cssIcon {
+    position: relative;
+    background-color: #444;
+    border-radius: .5rem;
+    padding: 0;
+}
+
+.cssIcon::after {
+    content: "";
+    color: var(--text-n);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.cssIcon:hover::after {
+    content: 'CSS';
+    opacity: 1;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.46);
+}
+
+.jsIcon {
+    position: relative;
+    background-color: #444;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.jsIcon::after {
+    content: "";
+    color: var(--text-n);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.jsIcon:hover::after {
+    content: 'JS';
+    opacity: 1;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.46);
+}
+
+.bootstrapIcon {
+    position: relative;
+    background-color: #444;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.bootstrapIcon::after {
+    content: "";
+    font-size: .8rem;
+    color: var(--text-n);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.bootstrapIcon:hover::after {
+    content: 'BOOTSTRAP';
+    font-size: .8rem;
+    opacity: 1;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.46);
+}
+
+.gitIcon {
+    z-index: 200;
+    position: relative;
+    background-color: #444;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.gitIcon::after {
+    content: "";
+    color: var(--text-n);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.gitIcon:hover::after {
+    content: 'GIT';
+    opacity: 1;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.46);
+}
+
+.githubIcon {
+    z-index: 200;
+    position: relative;
+    background-color: #444;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.githubIcon::after {
+    content: "";
+    color: var(--text-n);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.githubIcon:hover::after {
+    content: 'GITHUB';
+    opacity: 1;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.46);
+}
+
+.reactIcon {
+    position: relative;
+    z-index: 200;
+    background-color: #444;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.reactIcon::after {
+    content: "";
+    color: var(--text-n);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.reactIcon:hover::after {
+    content: 'REACT';
+    opacity: 1;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.46);
+}
+
+.waveImg {
+    top: -2px;
+}
+
+.project-content {
+    padding-top: 10rem;
+}
+
+.wave1Img {
+    transform: translateY(2px);
+}
+
+.skills-section {
+    background-color: var(--body-bg);
+    min-height: 100vh;
+}
+
+.navbar-toggler {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    padding: 0;
+    margin: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: .333rem;
+    border-radius: .167rem;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.top-bar {
+    transform: rotate(135deg);
+}
+
+.middle-bar {
+    opacity: 0;
+}
+
+.bottom-bar {
+    transform: rotate(-135deg);
+}
+
+.collapsed .top-bar {
+    transform: translateY(-.8rem);
+}
+
+.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.collapsed .bottom-bar {
+    transform: translateY(.8rem);
+}
+
+#contact {
+    background: url(img/layered-peaks-haikei.svg);
+    min-height: 100vh;
+    background-size: cover;
+    transform: translateY(-2px);
+}
